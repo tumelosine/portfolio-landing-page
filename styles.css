@@ -4,6 +4,7 @@ nav ol {
     gap: 40px;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 nav ol a {
@@ -18,13 +19,15 @@ nav ol a {
     font-size: 20px;
     color: palevioletred;
 }
-body, html{
+
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background:linear-gradient(135deg, #f9c5d1, #fbc2eb);
+    background: linear-gradient(135deg, #f9c5d1, #fbc2eb);
 }
+
 #home {
     margin: 0;
     display: flex;
@@ -37,13 +40,14 @@ body, html{
     position: relative;
     padding: 20px;
 }
+
 #home img {
     width: 250px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     margin-bottom: 20px;
-    background: transparent; /* Ensures image blends if it's a PNG */
+    background: transparent;
 }
 
 #home h1 {
@@ -60,7 +64,7 @@ body, html{
 
 #about {
     margin: 150px;
-    background-color:#FFB7D5;
+    background-color: #FFB7D5;
     border-radius: 10px;
 }
 
@@ -109,10 +113,12 @@ body, html{
     text-align: center;
     font-weight: 300;
 }
+
 .Skills h2 {
     margin-bottom: 15px;
     text-align: center;
 }
+
 .container2 {
     display: flex;
 }
@@ -142,4 +148,55 @@ button {
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
+}
+
+/* ---------------------- */
+/* MEDIA QUERY for Mobile  */
+/* ---------------------- */
+@media (max-width: 768px) {
+    nav ol {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    nav ol a {
+        font-size: 18px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #home img {
+        width: 180px;
+    }
+
+    #about {
+        margin: 50px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container,
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .ending {
+        padding: 40px;
+    }
 }
