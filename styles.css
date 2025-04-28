@@ -1,3 +1,4 @@
+/* Base Styles */
 nav ol {
     display: flex;
     justify-content: center;
@@ -42,7 +43,8 @@ body, html {
 }
 
 #home img {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
@@ -60,6 +62,7 @@ body, html {
     font-size: 18px;
     color: palevioletred;
     margin: 5px 0;
+    max-width: 90%;
 }
 
 #about {
@@ -148,6 +151,8 @@ button {
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 /* ---------------------- */
@@ -156,16 +161,22 @@ button {
 @media (max-width: 768px) {
     nav ol {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         align-items: center;
+        padding: 20px 0;
     }
 
     nav ol a {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 8px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     #home h1 {
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 1.2;
     }
 
     #home p {
@@ -173,30 +184,70 @@ button {
     }
 
     #home img {
-        width: 180px;
+        max-width: 180px;
     }
 
     #about {
-        margin: 50px 20px;
+        margin: 30px 15px;
+        padding: 20px;
     }
 
     .about-container {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
     }
 
     .container,
     .container2 {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .box {
-        margin: 20px;
-        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        width: 85%;
+        box-sizing: border-box;
     }
 
     .ending {
-        padding: 40px;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Additional small device optimization */
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 28px;
+    }
+    
+    #home p {
+        font-size: 14px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    .box {
+        margin: 10px;
+        padding: 10px;
     }
 }
