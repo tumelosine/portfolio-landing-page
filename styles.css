@@ -1,0 +1,145 @@
+nav ol {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ol a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: palevioletred;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(135deg, #f9c5d1, #fbc2eb);
+}
+#home {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    position: relative;
+    padding: 20px;
+}
+#home img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    background: transparent; /* Ensures image blends if it's a PNG */
+}
+
+#home h1 {
+    color: palevioletred;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#home p {
+    font-size: 18px;
+    color: palevioletred;
+    margin: 5px 0;
+}
+
+#about {
+    margin: 150px;
+    background-color:#FFB7D5;
+    border-radius: 10px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    gap: 300px;
+    background-color: #FFB7D5;
+    text-align: left;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.Skills {
+    text-align: center;
+    font-weight: 300;
+}
+.Skills h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.container2 {
+    display: flex;
+}
+
+.services {
+    text-align: center;
+    font-weight: 300;
+}
+
+#contact {
+    text-align: end;
+}
+
+#contact a {
+    color: palevioletred;
+}
+
+.ending {
+    background-color: #FFB7D5;
+    padding: 70px;
+}
+
+button {
+    margin: 15px;
+    padding: 13px;
+    background-color: palevioletred;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
